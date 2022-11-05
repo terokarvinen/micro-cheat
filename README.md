@@ -22,13 +22,14 @@ Tested with
 - CSS (cascading style sheets)
 - HTML
 - HAML (HTML abstraction markup language)
-- Vagrantfile
-- Dockerfile
+- Vagrantfile (by filename)
+- Dockerfile (by filename)
 - Makefile
 - JavaScript (ECMAScript)
 - TypeScript
 - YAML (yet another markup language)
 - org-mode (*.org)
+- bash (shell)
 
 ## Installation
 
