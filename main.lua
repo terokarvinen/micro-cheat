@@ -25,9 +25,12 @@ function cheatCommand(bp)
 		micro.InfoBar():Message("Cheatsheet by file name: "..filename)
 	elseif string.find(filename, "\.org$") then -- not detected by micro
 		filetype = "org"
-	else
+	elseif "unknown" ~= filetype then
 		-- micro hopefully detected the filetype, the typical case
 		micro.InfoBar():Message("Cheatsheet by file type: "..filetype)
+	else
+		micro.InfoBar():Message("Cheatsheet not found for type '"..filetype.."', filename '"..filename.."'")
+		return
 	end
 	
 	local cmd = "tab " .. cheatdir .. filetype .. ".md"
