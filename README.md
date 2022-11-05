@@ -42,7 +42,7 @@ Currently, there is just development install
 
 ## Tutorial
 
-[Installation & tutorial for for coder plugins: Command Palette, Cheatsheet, Run and Make](https://terokarvinen.com/2022/command-palette-cheatsheet-run-and-make-micro/)
+[Installation & tutorial for 4 plugins: Palettero, Cheat, Run and Jump](https://terokarvinen.com/2022/command-palette-cheatsheet-run-and-make-micro/)
 
 ## Limitations
 
