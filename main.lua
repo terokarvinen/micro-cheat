@@ -17,7 +17,17 @@ function init()
 end
 
 function cheatCommand(bp)
-	local cmd = "tab " .. cheatdir .. bp.Buf:FileType() .. ".md"
-	micro.InfoBar():Message(cmd)
+	local filename = bp.Buf:GetName()
+	local filetype = bp.Buf:FileType()
+
+	if "Vagrantfile" == filename then
+		filetype = filename:lower()
+		micro.InfoBar():Message("Cheatsheet by file name: "..filename)
+	else
+		micro.InfoBar():Message("Cheatsheet by file type: "..filetype)
+	end
+	
+	local cmd = "tab " .. cheatdir .. filetype .. ".md"
 	bp:HandleCommand(cmd)
+
 end
