@@ -50,6 +50,10 @@ Currently, there is just development install
 
 All cheatsheets included in cheatsheets/ directory are not supported yet. Micro-cheat has only been tested on Linux. 
 
+## Todo
+
+Bibtex references cheatsheet. Should be MIT licensed to be included in this plugin. 
+
 ## Adminstrivia
 
 Cheatsheets are from https://devhints.io project, copyright (c) 2021 Rico Sta. Cruz and contributors, received under MIT license.
