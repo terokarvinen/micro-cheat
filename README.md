@@ -12,6 +12,7 @@ A cheatsheet for the language opens. If you're editing Python, it's a Python che
 Press Ctrl-Q to close the cheatsheet tab and return to editing. 
 
 For your convenience, micro-cheat also provides a command 'cheat' that you can bind to any key or run with ctrl-E. 
+
 Tested with 
 
 - Python
