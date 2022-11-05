@@ -35,7 +35,7 @@ Currently, there is just development install
 
 ## Limitations
 
-All cheatsheets included in cheatsheets/ directory are not supported yet. 
+All cheatsheets included in cheatsheets/ directory are not supported yet. Micro-cheat has only been tested on Linux. 
 
 ## Adminstrivia
 
