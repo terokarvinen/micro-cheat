@@ -21,6 +21,7 @@ Tested with
 - CSS (cascading style sheets)
 - HTML
 - HAML (HTML abstraction markup language)
+- Vagrantfile
 
 ## Installation
 
