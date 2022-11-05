@@ -40,6 +40,10 @@ Currently, there is just development install
 	$ cd $HOME/.config/micro/plug/
 	$ git clone https://github.com/terokarvinen/micro-cheat
 
+## Tutorial
+
+[Installation & tutorial for for coder plugins: Command Palette, Cheatsheet, Run and Make](https://terokarvinen.com/2022/command-palette-cheatsheet-run-and-make-micro/)
+
 ## Limitations
 
 All cheatsheets included in cheatsheets/ directory are not supported yet. Micro-cheat has only been tested on Linux. 
