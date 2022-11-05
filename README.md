@@ -6,7 +6,7 @@ A plugin for Micro editor.
 
 ## Usage
 
-Edit a source code file with micro. Press *F1*. 
+Edit a source code file with micro. Press **F1**. 
 
 A cheatsheet for the language opens. If you're editing Python, it's a Python cheatsheet. If Go, then Go cheatsheet.
 Press Ctrl-Q to close the cheatsheet tab and return to editing. 
