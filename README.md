@@ -33,6 +33,10 @@ Currently, there is just development install
 	$ cd $HOME/.config/micro/plug/
 	$ git clone https://github.com/terokarvinen/micro-cheat
 
+## Limitations
+
+All cheatsheets included in cheatsheets/ directory are not supported yet. 
+
 ## Adminstrivia
 
 Cheatsheets are from https://devhints.io project, copyright (c) 2021 Rico Sta. Cruz and contributors, received under MIT license.
