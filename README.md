@@ -9,10 +9,18 @@ A plugin for Micro editor.
 Edit a source code file with micro. Press F1. 
 
 A cheatsheet for the language opens. If you're editing Python, it's a Python cheatsheet. If Go, then Go cheatsheet.
-
 Press Ctrl-Q to close the cheatsheet tab and return to editing. 
 
 For your convenience, micro-cheat also provides a command 'cheat' that you can bind to any key or run with ctrl-E. 
+Tested with 
+
+- Python
+- Go (Golang)
+- Lua
+- Javascript
+- CSS (cascading style sheets)
+- HTML
+- HAML (HTML abstraction markup language)
 
 ## Installation
 
