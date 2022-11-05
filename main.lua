@@ -23,7 +23,10 @@ function cheatCommand(bp)
 	if "Vagrantfile" == filename or "Dockerfile" == filename then
 		filetype = filename:lower()
 		micro.InfoBar():Message("Cheatsheet by file name: "..filename)
+	elseif string.find(filename, "\.org$") then -- not detected by micro
+		filetype = "org"
 	else
+		-- micro hopefully detected the filetype, the typical case
 		micro.InfoBar():Message("Cheatsheet by file type: "..filetype)
 	end
 	
