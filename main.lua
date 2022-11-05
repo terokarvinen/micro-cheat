@@ -20,7 +20,7 @@ function cheatCommand(bp)
 	local filename = bp.Buf:GetName()
 	local filetype = bp.Buf:FileType()
 
-	if "Vagrantfile" == filename then
+	if "Vagrantfile" == filename or "Dockerfile" == filename then
 		filetype = filename:lower()
 		micro.InfoBar():Message("Cheatsheet by file name: "..filename)
 	else

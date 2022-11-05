@@ -22,6 +22,7 @@ Tested with
 - HTML
 - HAML (HTML abstraction markup language)
 - Vagrantfile
+- Dockerfile
 
 ## Installation
 
