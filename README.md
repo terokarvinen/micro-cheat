@@ -30,6 +30,7 @@ Tested with
 - YAML (yet another markup language)
 - org-mode (*.org)
 - bash (shell)
+- MarkDown
 
 ## Installation
 
