@@ -23,6 +23,10 @@ Tested with
 - HAML (HTML abstraction markup language)
 - Vagrantfile
 - Dockerfile
+- Makefile
+- JavaScript (ECMAScript)
+- TypeScript
+- YAML (yet another markup language)
 
 ## Installation
 
