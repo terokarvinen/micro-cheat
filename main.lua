@@ -36,5 +36,7 @@ function cheatCommand(bp)
 	
 	local cmd = "tab " .. cheatdir .. filetype .. ".md"
 	bp:HandleCommand(cmd)
+	
+	-- bp:HandleCommand("setlocal readonly true") -- user changes would be overwritten my micro-cheat updates
 
 end

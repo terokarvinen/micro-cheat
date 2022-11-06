@@ -36,7 +36,7 @@ Tested with
 
 In the future, you will be able to install micro-cheat by
 
-	$ micro --plugin install micro-cheat
+	$ micro --plugin install cheat
 
 Currently, there is just development install
 
