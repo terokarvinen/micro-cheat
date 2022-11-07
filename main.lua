@@ -23,9 +23,11 @@ function cheatCommand(bp)
 	if "Vagrantfile" == filename or "Dockerfile" == filename then
 		filetype = filename:lower()
 		micro.InfoBar():Message("Cheatsheet by file name: "..filename)
-	elseif string.find(filename, "\.org$") then -- not detected by micro
-		filetype = "org"
-		micro.InfoBar():Message("Cheatsheet by file suffix: "..filename)
+-- Disabled org-mode support, because literal dot (backslash dot) escape causes error
+-- in the micro shipped by latest Kali
+--	elseif string.find(filename, "\.org$") then -- not detected by micro
+--		filetype = "org"
+--		micro.InfoBar():Message("Cheatsheet by file suffix: "..filename)
 	elseif "unknown" ~= filetype then
 		-- micro hopefully detected the filetype, the typical case
 		micro.InfoBar():Message("Cheatsheet by file type: "..filetype)
