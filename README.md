@@ -28,7 +28,6 @@ Tested with
 - JavaScript (ECMAScript)
 - TypeScript
 - YAML (yet another markup language)
-- org-mode (*.org)
 - bash (shell)
 - MarkDown
 
