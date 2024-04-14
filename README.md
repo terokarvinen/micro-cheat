@@ -58,5 +58,5 @@ Bibtex references cheatsheet. Should be MIT licensed to be included in this plug
 
 Cheatsheets are from https://devhints.io project, copyright (c) 2021 Rico Sta. Cruz and contributors, received under MIT license.
 
-Micro-cheat plugin is Copyright 2022 Tero Karvinen https://TeroKarvinen.com, MIT license. 
+Micro-cheat plugin is Copyright 2022-2024 Tero Karvinen https://TeroKarvinen.com, MIT license. 
 
