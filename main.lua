@@ -7,9 +7,21 @@
 
 local micro = import("micro")
 local config = import("micro/config")
+local os = import("os")
 
 local cheatdir = config.ConfigDir.."/plug/micro-cheat/cheatsheets/"
 
+function getSuffix(filename)
+	-- return last suffix without dot. Example: "tero.foo.bar.sass" -> "sass"
+	return filename:match("%.(%w+)$")
+end
+
+function fileExists(filename)
+	-- return true if "filename" exists
+	local _, err = os.Stat(filename)
+	return not err
+end
+	
 function init()
 	-- runs once when micro starts
 	config.MakeCommand("cheat", cheatCommand, config.NoComplete)
@@ -19,6 +31,7 @@ end
 function cheatCommand(bp)
 	local filename = bp.Buf:GetName()
 	local filetype = bp.Buf:FileType()
+	local filesuffix = getSuffix(filename)
 
 	if "Vagrantfile" == filename or "Dockerfile" == filename then
 		filetype = filename:lower()
@@ -31,12 +44,22 @@ function cheatCommand(bp)
 	elseif "unknown" ~= filetype then
 		-- micro hopefully detected the filetype, the typical case
 		micro.InfoBar():Message("Cheatsheet by file type: "..filetype)
-	else
-		micro.InfoBar():Message("Cheatsheet not found for type '"..filetype.."', filename '"..filename.."'")
-		return
+	elseif nil ~= filesuffix then
+		filetype = filesuffix
+		micro.InfoBar():Message("Cheatsheet by file suffix: "..filetype)
+	--else
+	--	micro.InfoBar():Message("Cheatsheet not found for type '"..filetype.."', filename '"..filename.."'")
+	--	return
+	end
+
+	local cheatsheet = cheatdir .. filetype .. ".md"
+
+	if not fileExists(cheatsheet) then
+		micro.InfoBar():Message("Cheatsheet for \""..filetype.."\" does not exist. Contribute to https://github.com/terokarvinen/micro-cheat")
 	end
 	
-	local cmd = "tab " .. cheatdir .. filetype .. ".md"
+	-- local cmd = "tab " .. cheatdir .. filetype .. ".md"
+	local cmd = "tab " .. cheatsheet
 	bp:HandleCommand(cmd)
 	
 	-- bp:HandleCommand("setlocal readonly true") -- user changes would be overwritten my micro-cheat updates
