@@ -30,7 +30,7 @@ Tested with
 - YAML (yet another markup language)
 - bash (shell)
 - MarkDown
-- SASS
+- SASS (by suffix)
 
 ## Installation
 
