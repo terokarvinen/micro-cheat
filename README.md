@@ -34,11 +34,11 @@ Tested with
 
 ## Installation
 
-In the future, you will be able to install micro-cheat by
+Micro-cheat is now part of official Micro plugin-channel.
 
 	$ micro --plugin install cheat
 
-Currently, there is just development install
+Alternatively, a development install
 
 	$ cd $HOME/.config/micro/plug/
 	$ git clone https://github.com/terokarvinen/micro-cheat
